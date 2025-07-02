@@ -47,18 +47,21 @@ const StudentList = () => {
     <div className="student-list">
       <h2>All Students</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
-      <ul>
+        <ul>
         {students.map(student => (
-          <li key={student.id}>
-            <strong>{student.firstName} {student.lastName}</strong> ({student.email})<br />
-            DOB: {student.dateOfBirth}, Coins: {student.coins}
-            <br />
-            <button onClick={() => handleDelete(student.id)} style={{ marginTop: '6px', backgroundColor: '#dc3545', color: '#fff', border: 'none', padding: '5px 10px', borderRadius: '6px' }}>
-              Delete
+            <li key={student.id} className="student-card">
+            <div className="student-info">
+                <div><span className="label">Name:</span> {student.firstName} {student.lastName}</div>
+                <div><span className="label">Email:</span> {student.email}</div>
+                <div><span className="label">Date of Birth:</span> {student.dateOfBirth}</div>
+                <div><span className="label">Coins:</span> {student.coins}</div>
+            </div>
+            <button onClick={() => handleDelete(student.id)} className="delete-btn">
+                Delete
             </button>
-          </li>
+            </li>
         ))}
-      </ul>
+        </ul>
     </div>
   );
 };

@@ -1,17 +1,61 @@
+/* StudentList.css */
+
 .student-list {
-  max-width: 700px;
+  max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #f3f3f3;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.student-list h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.student-list .student-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
   border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease-in-out;
+}
+
+.student-list .student-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.student-list .student-info {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.student-list .student-info span.label {
+  font-weight: bold;
+  color: #333;
+}
+
+.student-list .delete-btn {
+  margin-top: 12px;
+  padding: 8px 14px;
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.student-list .delete-btn:hover {
+  background-color: #c92a36;
 }
 
 .student-list ul {
   list-style: none;
   padding: 0;
-}
-
-.student-list li {
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
+  margin: 0;
 }
