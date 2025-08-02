@@ -31,7 +31,7 @@ const CourseForm = () => {
         }
       });
 
-      setMessage('✅ Course created successfully!');
+      setMessage('Course created successfully!');
       setForm({ title: '', description: '', price: '', coinsPaid: '' });
     } catch (err) {
       console.error(err);
