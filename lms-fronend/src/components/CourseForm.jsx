@@ -35,7 +35,7 @@ const CourseForm = () => {
       setForm({ title: '', description: '', price: '', coinsPaid: '' });
     } catch (err) {
       console.error(err);
-      setMessage('❌ Failed to create course');
+      setMessage('Failed to create course');
     }
   };
 
