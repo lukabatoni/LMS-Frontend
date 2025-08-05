@@ -37,7 +37,7 @@ const StudentForm = () => {
         }
       );
 
-      setMessage('Student created successfully!');
+      setMessage('Student created successfully!!');
       setIsSuccess(true);
     } catch (error) {
       setMessage('Failed to create student');
